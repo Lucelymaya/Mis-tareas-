@@ -26,7 +26,7 @@ for fila in matriz_e:
     print(fila)
 
 #ordena la fila 1 en orden acendete
-fila_a_ordenar = 1
+fila_a_ordenar = 2
 ordenar_fila(matriz_e, fila_a_ordenar)
 #muetra la matriz ordenada
 print("\nMatriz con la fila ordenada:")
