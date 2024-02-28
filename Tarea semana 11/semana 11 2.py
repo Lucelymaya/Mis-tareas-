@@ -1,27 +1,34 @@
-def ordenar_fila(matriz, fila):
-    fila_ordenada = sorted(matriz[fila])
-    matriz[fila] = fila_ordenada
+def ordenar_fila(matriz, nu_fila):
+    # Verificar si la fila está dentro del rango válido
+    if 0 <= nu_fila < len(matriz):
+        # Ordenar la fila usando el algoritmo de ordenación (Bubble Sort en este caso)
+        matriz[nu_fila] = bubble_sort(matriz[nu_fila])
 
-def imprimir_matriz(matriz):
-    for fila in matriz:
-        print(fila)
+def bubble_sort(fila):
+    n = len(fila)
 
-def main():
-    matriz = [
-        [3, 1, 4],
-        [1, 5, 9],
-        [2, 6, 5]
-    ]
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if fila[j] > fila[j + 1]:
+                fila[j], fila[j + 1] = fila[j + 1], fila[j]
 
-    fila_a_ordenar = 1
+    return fila
 
-    print("Matriz original:")
-    imprimir_matriz(matriz)
+# Definir una matriz de ejemplo 3x3
+matriz_e = [
+    [3, 2, 1],
+    [6, 5, 4],
+    [9, 8, 7]
+]
+#Muestra la matriz original
+print("Matriz original:")
+for fila in matriz_e:
+    print(fila)
 
-    ordenar_fila(matriz, fila_a_ordenar)
-
-    print("\nMatriz con la fila ordenada:")
-    imprimir_matriz(matriz)
-
-if __name__ == "__main__":
-    main()
+#ordena la fila 1 en orden acendete
+fila_a_ordenar = 1
+ordenar_fila(matriz_e, fila_a_ordenar)
+#muetra la matriz ordenada
+print("\nMatriz con la fila ordenada:")
+for fila in matriz_e:
+    print(fila)
