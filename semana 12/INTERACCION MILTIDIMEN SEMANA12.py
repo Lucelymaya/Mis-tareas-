@@ -79,5 +79,5 @@ for i, sucursal in enumerate(ventas):
 
         promedios_ventas[(i + 1, j + 1)] = promedio  # Almacenar el promedio con clave (sucursal, semana)
 
-        print(f"Para sucursal {i + 1}, semana {j + 1}: Promedio de ventas = {promedio:.2f}")
+        print(f"Para sucursal {i + 1}, semana {j + 1}: Promedio de ventas = {promedio:.2f}"
 
