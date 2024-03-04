@@ -2,82 +2,74 @@
 # Primera dimensión: Sucursales (2 sucursales)
 # Segunda dimensión: Semanas (3 semanas)
 # Tercera dimensión: Días de la semana (7 días)
-ventas = [
+temperaturas = [
     [   # Sucursal 1
         [   # Semana 1
-            {"day": "Lunes", "venta": 1000},
-            {"day": "Martes", "venta": 1200},
-            {"day": "Miércoles", "venta": 1100},
-            {"day": "Jueves", "venta": 900},
-            {"day": "Viernes", "venta": 1300},
-            {"day": "Sábado", "venta": 1400},
-            {"day": "Domingo", "venta": 1500}
+            {"day": "Lunes", "temp": 12},
+            {"day": "Martes", "temp": 80},
+            {"day": "Miércoles", "temp": 50},
+            {"day": "Jueves", "temp": 50},
+            {"day": "Viernes", "temp": 80},
+            {"day": "Sábado", "temp": 80},
+            {"day": "Domingo", "temp": 50}
         ],
         [   # Semana 2
-            {"day": "Lunes", "venta": 1100},
-            {"day": "Martes", "venta": 1150},
-            {"day": "Miércoles", "venta": 1050},
-            {"day": "Jueves", "venta": 950},
-            {"day": "Viernes", "venta": 1350},
-            {"day": "Sábado", "venta": 1450},
-            {"day": "Domingo", "venta": 1550}
+            {"day": "Lunes", "temp": 11},
+            {"day": "Martes", "temp": 80},
+            {"day": "Miércoles", "temp": 50},
+            {"day": "Jueves", "temp": 50},
+            {"day": "Viernes", "temp": 80},
+            {"day": "Sábado", "temp": 50},
+            {"day": "Domingo", "temp": 50}
         ],
         [   # Semana 3
-            {"day": "Lunes", "venta": 1200},
-            {"day": "Martes", "venta": 1250},
-            {"day": "Miércoles", "venta": 1150},
-            {"day": "Jueves", "venta": 950},
-            {"day": "Viernes", "venta": 1400},
-            {"day": "Sábado", "venta": 1500},
-            {"day": "Domingo", "venta": 1600}
+            {"day": "Lunes", "temp": 50},
+            {"day": "Martes", "temp": 50},
+            {"day": "Miércoles", "temp": 60},
+            {"day": "Jueves", "temp": 60},
+            {"day": "Viernes", "temp": 60},
+            {"day": "Sábado", "temp": 60},
+            {"day": "Domingo", "temp": 80}
         ]
     ],
     [   # Sucursal 2
         [   # Semana 1
-            {"day": "Lunes", "venta": 900},
-            {"day": "Martes", "venta": 1100},
-            {"day": "Miércoles", "venta": 1000},
-            {"day": "Jueves", "venta": 800},
-            {"day": "Viernes", "venta": 1200},
-            {"day": "Sábado", "venta": 1300},
-            {"day": "Domingo", "venta": 1400}
+            {"day": "Lunes", "temp": 90},
+            {"day": "Martes", "temp": 15},
+            {"day": "Miércoles", "temp": 10},
+            {"day": "Jueves", "temp": 80},
+            {"day": "Viernes", "temp": 12},
+            {"day": "Sábado", "temp": 13},
+            {"day": "Domingo", "temp": 14}
         ],
         [   # Semana 2
-            {"day": "Lunes", "venta": 950},
-            {"day": "Martes", "venta": 1050},
-            {"day": "Miércoles", "venta": 950},
-            {"day": "Jueves", "venta": 850},
-            {"day": "Viernes", "venta": 1250},
-            {"day": "Sábado", "venta": 1350},
-            {"day": "Domingo", "venta": 1450}
+            {"day": "Lunes", "temp": 9},
+            {"day": "Martes", "temp": 10},
+            {"day": "Miércoles", "temp": 95},
+            {"day": "Jueves", "temp": 85},
+            {"day": "Viernes", "temp": 12},
+            {"day": "Sábado", "temp": 13},
+            {"day": "Domingo", "temp": 14}
         ],
         [   # Semana 3
-            {"day": "Lunes", "venta": 1000},
-            {"day": "Martes", "venta": 1150},
-            {"day": "Miércoles", "venta": 1050},
-            {"day": "Jueves", "venta": 900},
-            {"day": "Viernes", "venta": 1300},
-            {"day": "Sábado", "venta": 1400},
-            {"day": "Domingo", "venta": 1500}
+            {"day": "Lunes", "temp": 10},
+            {"day": "Martes", "temp": 11},
+            {"day": "Miércoles", "temp": 10},
+            {"day": "Jueves", "temp": 9},
+            {"day": "Viernes", "temp": 13},
+            {"day": "Sábado", "temp": 14},
+            {"day": "Domingo", "temp": 15}
         ]
     ]
 ]
 
-promedios_ventas = {}
-# Calcular el promedio de ventas para cada sucursal y semana
 
-for i, sucursal in enumerate(ventas):
 
-    for j, semana in enumerate(sucursal):
-
-        total = 0
-
-        for dia in semana:
-            total += dia['venta']
-
-        promedio = total / len(semana)
-
-        promedios_ventas[(i + 1, j + 1)] = promedio  # Almacenar el promedio con clave (sucursal, semana)
-
-        print(f"Para sucursal {i + 1}, semana {j + 1}: Promedio de ventas = {promedio:.2f}"
-
+# Iterando sobre las ciudades, semanas y días para calcular el promedio de temperaturas
+for ciudad_index, ciudad in enumerate(temperaturas, start=1):
+    print(f'CIUDAD No. {ciudad_index}')
+    for semana_index, semana in enumerate(ciudad, start=1):
+        # Calculando el promedio de temperaturas para la semana actual
+        temperatura_semana = [dia["temp"] for dia in semana]  # Lista de temperaturas de la semana
+        promedio_semana = sum(temperatura_semana) / len(temperatura_semana)  # Calculando el promedio
+        print(f'El promedio de la semana No. {semana_index} es: {promedio_semana:.2f}')
