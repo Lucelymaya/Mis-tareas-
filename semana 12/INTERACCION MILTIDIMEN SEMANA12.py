@@ -63,11 +63,21 @@ ventas = [
     ]
 ]
 
+promedios_ventas = {}
 # Calcular el promedio de ventas para cada sucursal y semana
-for sucursal in ventas:
-    for semana in sucursal:
+
+for i, sucursal in enumerate(ventas):
+
+    for j, semana in enumerate(sucursal):
+
         total = 0
+
         for dia in semana:
             total += dia['venta']
+
         promedio = total / len(semana)
-        print(promedio)
+
+        promedios_ventas[(i + 1, j + 1)] = promedio  # Almacenar el promedio con clave (sucursal, semana)
+
+        print(f"Para sucursal {i + 1}, semana {j + 1}: Promedio de ventas = {promedio:.2f}")
+
