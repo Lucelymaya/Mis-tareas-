@@ -1,64 +1,64 @@
-# Crear una matriz 3D para almacenar datos de ventas
+# Crear una matriz 3D para almacenar datos de Temperatura
 # Primera dimensión: Sucursales (2 sucursales)
 # Segunda dimensión: Semanas (3 semanas)
 # Tercera dimensión: Días de la semana (7 días)
 temperaturas = [
-    [   # Sucursal 1
+    [   # ciudad 1
         [   # Semana 1
-            {"day": "Lunes", "temp": 1000},
-            {"day": "Martes", "temp": 1200},
-            {"day": "Miércoles", "temp": 1100},
-            {"day": "Jueves", "temp": 900},
-            {"day": "Viernes", "temp": 1300},
-            {"day": "Sábado", "temp": 1400},
-            {"day": "Domingo", "temp": 1500}
+            {"day": "Lunes", "temp": 10},
+            {"day": "Martes", "temp": 12},
+            {"day": "Miércoles", "temp": 11},
+            {"day": "Jueves", "temp": 90},
+            {"day": "Viernes", "temp": 13},
+            {"day": "Sábado", "temp": 14},
+            {"day": "Domingo", "temp": 15}
         ],
         [   # Semana 2
-            {"day": "Lunes", "temp": 1100},
-            {"day": "Martes", "temp": 1150},
-            {"day": "Miércoles", "temp": 1050},
-            {"day": "Jueves", "temp": 950},
-            {"day": "Viernes", "temp": 1350},
-            {"day": "Sábado", "temp": 1450},
-            {"day": "Domingo", "temp": 1550}
+            {"day": "Lunes", "temp": 11},
+            {"day": "Martes", "temp": 11},
+            {"day": "Miércoles", "temp": 10},
+            {"day": "Jueves", "temp": 90},
+            {"day": "Viernes", "temp": 13},
+            {"day": "Sábado", "temp": 14},
+            {"day": "Domingo", "temp": 15}
         ],
         [   # Semana 3
-            {"day": "Lunes", "temp": 1200},
-            {"day": "Martes", "temp": 1250},
-            {"day": "Miércoles", "temp": 1150},
-            {"day": "Jueves", "temp": 950},
-            {"day": "Viernes", "temp": 1400},
-            {"day": "Sábado", "temp": 1500},
-            {"day": "Domingo", "temp": 1600}
+            {"day": "Lunes", "temp": 12},
+            {"day": "Martes", "temp": 12},
+            {"day": "Miércoles", "temp": 11},
+            {"day": "Jueves", "temp": 90},
+            {"day": "Viernes", "temp": 14},
+            {"day": "Sábado", "temp": 15},
+            {"day": "Domingo", "temp": 16}
         ]
     ],
-    [   # Sucursal 2
+    [   # ciudad 2
         [   # Semana 1
-            {"day": "Lunes", "temp": 900},
-            {"day": "Martes", "temp": 1100},
-            {"day": "Miércoles", "temp": 1000},
-            {"day": "Jueves", "temp": 800},
-            {"day": "Viernes", "temp": 1200},
-            {"day": "Sábado", "temp": 1300},
-            {"day": "Domingo", "temp": 1400}
+            {"day": "Lunes", "temp": 9},
+            {"day": "Martes", "temp": 11},
+            {"day": "Miércoles", "temp": 10},
+            {"day": "Jueves", "temp": 80},
+            {"day": "Viernes", "temp": 12},
+            {"day": "Sábado", "temp": 13},
+            {"day": "Domingo", "temp": 14}
         ],
         [   # Semana 2
-            {"day": "Lunes", "temp": 950},
-            {"day": "Martes", "temp": 1050},
-            {"day": "Miércoles", "temp": 950},
-            {"day": "Jueves", "temp": 850},
-            {"day": "Viernes", "temp": 1250},
-            {"day": "Sábado", "temp": 1350},
-            {"day": "Domingo", "temp": 1450}
+            {"day": "Lunes", "temp": 95},
+            {"day": "Martes", "temp": 10},
+            {"day": "Miércoles", "temp": 95},
+            {"day": "Jueves", "temp": 85},
+            {"day": "Viernes", "temp": 12},
+            {"day": "Sábado", "temp": 13},
+            {"day": "Domingo", "temp": 14}
         ],
         [   # Semana 3
-            {"day": "Lunes", "temp": 1000},
-            {"day": "Martes", "temp": 1150},
-            {"day": "Miércoles", "temp": 1050},
-            {"day": "Jueves", "temp": 900},
-            {"day": "Viernes", "temp": 1300},
-            {"day": "Sábado", "temp": 1400},
-            {"day": "Domingo", "temp": 1500}
+            {"day": "Lunes", "temp": 10},
+            {"day": "Martes", "temp": 11},
+            {"day": "Miércoles", "temp": 10},
+            {"day": "Jueves", "temp": 90},
+            {"day": "Viernes", "temp": 13},
+            {"day": "Sábado", "temp": 14},
+            {"day": "Domingo", "temp": 15}
         ]
     ]
 ]
