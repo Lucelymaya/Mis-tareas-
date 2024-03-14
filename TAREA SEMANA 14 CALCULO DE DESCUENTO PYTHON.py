@@ -7,11 +7,11 @@ monto_compra_1 = 200
 descuento_1 = calcular_descuento(monto_compra_1)
 monto_final_1 = monto_compra_1 - descuento_1
 
-print("Para una compra de $", monto_compra_1, "el descuento es de $", descuento_1, "(",porcentaje_descuento_1,"%) y el monto final a pagar es de $", monto_final_1)
+print("Para una compra de $", monto_compra_1, "el descuento es de $", descuento_1, "(", 'porcentaje_descuento_1', "%) y el monto final a pagar es de $", monto_final_1)
 
 # Llamada a la función proporcionando tanto el monto total de la compra como el porcentaje de descuento
 monto_compra_2 = 300
-porcentaje_descuento_2 = 15
+porcentaje_descuento_2 = 10
 descuento_2 = calcular_descuento(monto_compra_2, porcentaje_descuento_2)
 monto_final_2 = monto_compra_2 - descuento_2
 
