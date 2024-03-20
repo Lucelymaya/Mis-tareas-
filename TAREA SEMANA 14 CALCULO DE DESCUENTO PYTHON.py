@@ -16,3 +16,4 @@ descuento_2 = calcular_descuento(monto_compra_2, porcentaje_descuento_2)
 monto_final_2 = monto_compra_2 - descuento_2
 
 print("Para una compra de $", monto_compra_2, "con un descuento del", porcentaje_descuento_2, "%, el descuento es de $", descuento_2, "(", porcentaje_descuento_2, "%) y el monto final a pagar es de $", monto_final_2)
+
