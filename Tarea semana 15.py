@@ -6,16 +6,26 @@ informacion_personal = {
     "Profesion": "Activadora de marca - Levapan"
 }
 
-# Verificar si la clave "telefono" existe en el diccionario
-if "telefono" not in informacion_personal:
-    # Si no existe, agregarla con un número de teléfono ficticio
-    informacion_personal["Telefono"] = "0988441980"
+print(informacion_personal)
 
-# Eliminar la clave "edad" del diccionario
-if "edad" in informacion_personal:
-    del informacion_personal["edad"]
+# Modificar el valor
+informacion_personal['ciudad'] = 'Quito'
+print(informacion_personal)
 
-# Imprimir el diccionario final
-print("Información personal:")
-for key in informacion_personal:
-    print(f"{key}: {informacion_personal[key]}")
+# Agregar nueva clave:valor
+informacion_personal['profesion'] = 'Docente'
+print(informacion_personal)
+
+# Verificar telefono y agregar
+if 'telefono' in informacion_personal:
+ print(informacion_personal['telefono'])
+else:
+ informacion_personal['telefono'] = '0987654321'
+print(informacion_personal)
+
+# Eliminar edad
+informacion_personal.pop('edad')
+print(informacion_personal)
+
+
+
