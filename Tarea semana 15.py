@@ -9,7 +9,7 @@ informacion_personal = {
 print(informacion_personal)
 
 # Modificar el valor
-informacion_personal['ciudad'] = 'Quito'
+informacion_personal['ciudad'] = 'Lago Agrio'
 print(informacion_personal)
 
 # Agregar nueva clave:valor
