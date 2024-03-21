@@ -1,11 +1,10 @@
-# diccionario con información personal ficticia
+# Diccionario
 informacion_personal = {
-    "Nombre": "Lilia Lucely Maya Enriquez",
-    "Edad": 36,
-    "Ciudad": "Lago Agrio-Sucumbios",
-    "Profesion": "Estudiante"
+'nombre':'Lucely Maya',
+'edad':36,
+'ciudad':'Lago Agrio',
+'provincia':'Sucumbios',
 }
-
 print(informacion_personal)
 
 # Modificar el valor
@@ -13,7 +12,7 @@ informacion_personal['ciudad'] = 'Lago Agrio'
 print(informacion_personal)
 
 # Agregar nueva clave:valor
-informacion_personal['profesion'] = 'Estudiante'
+informacion_personal['profesion'] = 'Estudiante Universitario'
 print(informacion_personal)
 
 # Verificar telefono y agregar
@@ -26,6 +25,8 @@ print(informacion_personal)
 # Eliminar edad
 informacion_personal.pop('edad')
 print(informacion_personal)
+
+
 
 
 
